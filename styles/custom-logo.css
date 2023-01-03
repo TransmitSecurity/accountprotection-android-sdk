@@ -1,0 +1,21 @@
+
+/*
+ * All Margins and sizes are custom for the ktor-logo.png file.
+ * You may need to modify it and find what works best for your case.
+ */
+.library-name a {
+    position: relative;
+    margin-left: 150px;
+}
+
+.library-name a::before {
+    content: '';
+    background-image: url('../images/ts-white-logo.svg');
+    background-repeat: no-repeat;
+    background-size: 146px 30px;
+    position: absolute;
+    width: 146px;
+    height: 30px;
+    top: -5px;
+    left: -150px;
+}
